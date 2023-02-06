@@ -43,4 +43,4 @@ while ($count -lt $NUMBER_OF_ACCOUNTS_TO_CREATE) {
                -Path "ou=_EMPLOYEES,$(([ADSI]`"").distinguishedName)" `
                -Enabled $true
     $count++
-}
+} 
