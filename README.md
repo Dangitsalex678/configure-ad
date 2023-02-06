@@ -105,5 +105,60 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>- Type down Domain in the object name
 </p>- Select "Domain Admins"
 </p>- Press OK and Apply
+</p>- Logoff and Log back in
+</p> 
+<br />
+
+<p>
+<img src="https://i.imgur.com/y4QxZ6G.png" height="80%" width="80%" alt="Assigning DNS Server"/>
 </p>
+<p>
+<b>- Go to Azure Portal and copy DC-1 Private IP
+</p>- Then select Client-1
+</p>- Under settings click on Networking and click on the Virtual NIC
+</p>- Under settings click on DNS Servers
+</p>- Select Custom DNS Server and paste the Private IP
+</p>- Click on Save
+</p>- Restart Client-1
+</p> 
+<br />
+
+<p>
+<img src="https://i.imgur.com/gMIGCEi.png" height="80%" width="80%" alt="Adding Client-1 to the Domain"/>
+</p>
+<p>
+<b>- Login to Client-1 with your Admin Account
+</p>- Right click the Start Button and select System
+</p>- Click "Rename this PC"
+</p>- Click the Change button
+</p>- Enter the custom domain from earlier
+</p>- When prompted, login with Jane Doe Admin that was created earlier
+</p> 
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/ogUZCiO.png" height="80%" width="80%" alt="Allowing Domain Access"/>
+</p>
+<p>
+<b>- Login to Client-1 with Jane Doe Admin Account
+</p>- Right click the Start Button and select System
+</p>- Click "Remote Desktop"
+</p>- Click on "Select users that can remotely access the PC
+</p>- Enter "Domain Users" to allows all users to access the PC
+</p>- 
+</p> 
+<br />
+
+<p>
+<img src="https://i.imgur.com/ogUZCiO.png" height="80%" width="80%" alt="Allowing Domain Access"/>
+</p>
+<p>
+<b>- Login into DC-1 with jane_admin
+</p>- Open PowerShell_ise as an administrator
+</p>- Click "Remote Desktop"
+</p>- Click on "Select users that can remotely access the PC
+</p>- Enter "Domain Users" to allows all users to access the PC
+</p>- 
+</p> 
 <br />
