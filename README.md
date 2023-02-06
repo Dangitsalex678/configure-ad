@@ -146,19 +146,25 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>- Click "Remote Desktop"
 </p>- Click on "Select users that can remotely access the PC
 </p>- Enter "Domain Users" to allows all users to access the PC
-</p>- 
 </p> 
 <br />
 
 <p>
-<img src="https://i.imgur.com/ogUZCiO.png" height="80%" width="80%" alt="Allowing Domain Access"/>
+<img src="https://i.imgur.com/M6Dm5zc.png" height="80%" width="80%" alt="Run User Creation Script"/>
 </p>
 <p>
 <b>- Login into DC-1 with jane_admin
 </p>- Open PowerShell_ise as an administrator
-</p>- Click "Remote Desktop"
-</p>- Click on "Select users that can remotely access the PC
-</p>- Enter "Domain Users" to allows all users to access the PC
-</p>- 
+</p>- Copy and paste the script from the Github
+</p>- Let the script create random users
 </p> 
 <br />
+
+<p>
+<img src="https://i.imgur.com/VUCRp37.png" height="80%" width="80%" alt="Logging in with Random Account"/>
+</p>
+<p>
+<b>- Login into Client-1 with a random accounts username and the password is Password1
+</p> 
+<br />
+
